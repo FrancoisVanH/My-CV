@@ -1,0 +1,80 @@
+/*  Styles CSS  */
+/* Fractionnement grid */
+.parent {
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+grid-template-rows: repeat(7, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+padding: 1rem;
+border: 1px solid #777;
+border-radius: .5rem;
+}
+/*  h1, h1, p  */
+h1, h2{
+    letter-spacing: 1px;
+    padding-left: 20px;
+}
+h1 {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+h2{
+background-color: #CDB699;
+}
+/*  body  */
+body{
+    background-color: #DBCC8F;
+    font-family: 'Koulen', cursive;
+}
+/*  Répartition des zones  */
+/*  nav  */.div1 { 
+    grid-area: 1 / 1 / 2 / 8; 
+    background-color: antiquewhite;
+    border-radius: .5em;
+}
+/*  Presentation  */.div2 {
+    grid-area: 2 / 2 / 4 / 8;
+    border-radius: .5em;
+}
+/*  Aller chercher l'enfant dans parent  */
+/*  ici p dans div2*/.div2>p{
+    padding-left: 20px;
+    font-size: 140%;
+    background-color: #F6E0B3;
+}
+/*  Body  */.div3 {
+    grid-area: 4 / 2 / 8 / 8;
+    border-radius: .5em;
+}
+/*  p dans d3  */.div3>p{
+    padding-left: 20px;
+    font-size: 140%;
+    background-color: #F6E0B3;
+}
+/*  skills  */.div4 {
+    grid-area: 2 / 1 / 8 / 2;
+    border-radius: .5em;
+}
+.div4>p {
+    font-size: 140%;
+    background-color: #F6E0B3;
+    text-align: center;
+}
+.div5>p {
+     font-size: 140%;
+    background-color: #F6E0B3;
+    text-align: center;   
+}
+.material-symbols-rounded {
+    align-items: center;
+}
+/*  socials  */.div5 { 
+    grid-area: 7 / 1 / 8 / 8;
+    border-radius: .5em;
+}
+.material-symbols-rounded {
+    padding-top: 7%;
+    padding-left: 25%;
+    padding-bottom: 85%;
+}
